@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Konstantinos_Christoforidis_Antonis_Tseos">
+	<meta name="description" content="Test SCG">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="images/logo.jpg">
+<title>TestSCG</title>
+
+	<style>
+		body{ 
+			background-color: #778899;
+		}
+		.q1 {
+			  text-align: center;
+			  width: 80%;
+			  border: 3px solid gray;
+			  padding: 5px;
+			  margin: auto;
+			  margin-top: 20px;
+			  background-color: #FFFFF0;
+		}
+		
+		.sbmt {
+			  text-align: center;
+			  width: auto;
+			  padding: 5px;
+			  margin: auto;
+			  margin-top: 5px;
+			  margin-bottom: 20px;
+		}
+		
+		.form_container input {
+			  display: block;
+			  margin: auto;
+			  width: 40%;
+			  transition: 0.3s;
+			  margin-bottom: 10px;
+		}
+		
+		.form_container input:hover {
+			  display: block;
+			  margin: auto;
+			  width: 50%;
+			  transition: 0.3s;
+			  margin-bottom: 10px;
+		}
+		
+		.title {
+			font-size: 60px;
+		}
+		
+		input[type=submit] {
+			padding:15px 15px;
+			width: 100px;
+			background:#ccc;
+			border:0 none;
+			cursor:pointer;
+			transition: 0.2s;
+			-webkit-border-radius: 5px;
+			border-radius: 5px;
+		}
+		input[type=submit]:hover {
+			background: #90EE90;
+			width: 150px;
+			transition: 0.2s;
+		}​​​​​
+	</style>
+		
+</head>
+<body>
+	<div class="title" style="text-align: center; margin-top: 50px;">
+		TestSCG
+	</div>
+	
+	<div class="q1">
+		<h2>
+			<strong>General Information</strong>
+		</h2>
+		<p>This is a questionnaire the results of which are collected and processed to produce an basic image of you characters
+		   priorities, strengths and preferences. As a result we give advice and statistics to assist you in choosing a profession 
+		   to pursue in the future.
+		</p>
+	</div>
+	
+	<form method="POST" action="SelectTestSCG.do">
+		<div class="q1">
+			<h2>
+				<strong>Insert Users Identification Characteristics</strong> 
+			</h2>
+				<div class="form_container">
+					<label for="name">Name</label>
+					<input type="text" name="name" required/>
+					<label for="age">Age</label>
+					<input type="text" name="age" required/>
+					<label for="email">Email</label>
+					<input type="text" name="email" required/>
+				</div>
+		</div>
+
+		<div class="q1">			
+			<h2>
+				<strong>Question 1:</strong> 
+			</h2>
+				<p>1) Do you like to work with other people?
+					<select name="quest1" size="1">
+					<option value=1> A lot </option>
+					<option value=0> A bit </option>
+					<option value=-1> Not at all </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">	
+			<h2>
+				<strong>Question 2:</strong> 
+			</h2>
+				<p>2) Would you like to study the history of ancient civilizations?
+					<select name="quest2" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">	
+			<h2>
+				<strong>Question 3:</strong> 
+			</h2>
+				<p>3) How much do you consider yourself consistent?
+					<select name="quest3" size="1">
+					<option value=1> A lot </option>
+					<option value=0> A bit </option>
+					<option value=-1> Not at all </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 4:</strong> 
+			</h2>
+				<p>4) Would you like to assist people with certain difficulties(in learning/psychological/work areas)?
+					<select name="quest4" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 5:</strong> 
+			</h2>
+				<p>5)Would you like to study the environment around you(what it consists of and phenomena)?
+					<select name="quest5" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">	
+			<h2>
+				<strong>Question 6:</strong> 
+			</h2>
+				<p>6) How well would you handle an emergency situation?
+					<select name="quest6" size="1">
+					<option value=1> A lot </option>
+					<option value=0> A bit </option>
+					<option value=-1> Not at all </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">	
+			<h2>
+				<strong>Question 7:</strong> 
+			</h2>
+				<p>7) Would you like to study the microworld?
+					<select name="quest7" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">		
+			<h2>
+				<strong>Question 8:</strong> 
+			</h2>
+				<p>8) Do you like to learn how to use/operate/design small appliances and machines?
+					<select name="quest8" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">			
+			<h2>
+				<strong>Question 9:</strong> 
+			</h2>
+				<p>9) How creative do you consider yourself?
+					<select name="quest9" size="1">
+					<option value=1> A lot </option>
+					<option value=0> A bit </option>
+					<option value=-1> Not at all </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">		
+			<h2>
+				<strong>Question 10:</strong> 
+			</h2>
+				<p>10) Would you like design as a hobby?
+					<select name="quest10" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 11:</strong> 
+			</h2>
+				<p>11) Do you like the fashion world and aesthetics?
+					<select name="quest11" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">		
+			<h2>
+				<strong>Question 12:</strong> 
+			</h2>
+				<p>12) Do you know how to use any musical instruments?
+					<select name="quest12" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">		
+			<h2>
+				<strong>Question 13:</strong> 
+			</h2>
+				<p>13) Would you like to pursue a career in music?
+					<select name="quest13" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">			
+			<h2>
+				<strong>Question 14:</strong> 
+			</h2>
+				<p>14) Do you like poetry or literature?
+					<select name="quest14" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">		
+			<h2>
+				<strong>Question 15:</strong> 
+			</h2>
+				<p>15) Would you like to learn new foreign languages?
+					<select name="quest15" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">		
+			<h2>
+				<strong>Question 16:</strong> 
+			</h2>
+				<p>16) Do you think you could teach in a school class?
+					<select name="quest16" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 17:</strong> 
+			</h2>
+				<p>17) How informed do you think you are about the financial/social issues of your society?
+					<select name="quest17" size="1">
+					<option value=1> A lot </option>
+					<option value=0> A bit </option>
+					<option value=-1> Not at all </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 18:</strong> 
+			</h2>
+				<p>18) Would you like to be involved in finance and statistics?
+					<select name="quest27" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">			
+			<h2>
+				<strong>Question 19:</strong> 
+			</h2>
+				<p>19) Do you consider yourself outgoing?
+					<select name="quest18" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 20:</strong>
+			</h2>
+				<p>20) Would you ever consider working as a journalist or in the news media?
+					<select name="quest19" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 21:</strong> 
+			</h2>
+				<p>21) Do you like testing experiments?
+					<select name="quest20" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 22:</strong> 
+			</h2>
+				<p>22) Would you like to learn more about how the Internet works?
+					<select name="quest21" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">		
+			<h2>
+				<strong>Question 23:</strong>
+			</h2>
+				<p>23) Would you be interested in learning a programming language?
+					<select name="quest22" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 24:</strong> 
+			</h2>
+				<p>24) Would you strongly defend your opinions in an dialogue/argument?
+					<select name="quest23" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 25:</strong> 
+			</h2>
+				<p>25) Would you like to examine the human anatomy?
+					<select name="quest24" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 26:</strong>
+			</h2>
+				<p>26) Would you like to contribute to the fight against a virus or a disease?
+					<select name="quest25" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 27:</strong> 
+			</h2>
+				<p>27) Would you like to serve in a public service (such as police/fire brigade/air force/navy/army)?
+					<select name="quest26" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 28:</strong> 
+			</h2>
+				<p>28) Would you like to work in cinematography/film etc.?
+					<select name="quest28" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 29:</strong> 
+			</h2>
+				<p>29) Would you like to be involved in the field of business administration?
+					<select name="quest29" size="1">
+					<option value=1> A lot </option>
+					<option value=0> A bit </option>
+					<option value=-1> Not at all </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="q1">
+			<h2>
+				<strong>Question 30:</strong>
+			</h2>
+				<p>30) Would you like to be involved in marketing/advertising?
+					<select name="quest30" size="1">
+					<option value=1> Yes </option>
+					<option value=0> No </option>
+					</select>
+				</p>
+		</div>
+		
+		<div class="sbmt">
+			<h4>
+				<input type="SUBMIT" name="SUBMIT">
+			</h4>
+		</div>
+	</form>
+</body>
+</html>
